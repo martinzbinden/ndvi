@@ -12,8 +12,14 @@ G <- gmeta6()
 
 
 ##prepare multiband raster from 5 uniband rasters
+library(gdalUtils)
 getwd()
+dir()
 setwd("img/w140925nir/3_dsm_ortho/2_mosaic/")
+onebandfiles <- c("transparent_w140925nir_mosaic_group2.tif, transparent_w140925nir_mosaic_group5.tif")
+gdalbuildvrt(gdalfile = "*.tif", 
+            output.vrt = "multiband.vrt",
+            separate = T)
 gdalbuildvrt -separate multiband.vrt transparent_w140925nir_mosaic_group*.tif
 gdal_merge.py -o multiband.tif -separate my.vrt
 
