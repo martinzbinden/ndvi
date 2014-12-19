@@ -1,16 +1,11 @@
 ##purpose: calc NDVI index from red and nir geotiff
 
 # load needed packages (be sure to have them installed)
-#library(raster)
-#library(rgdal)
 library(gdalUtils)
 
 #only for windows:
-# Sys.getenv("PATH")
-# Sys.setenv(PATH ="/home/martinz/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games")
+Sys.getenv("PATH")
 Sys.setenv(PATH = paste(Sys.getenv("PATH"), "C:\gdalwin32-1.6\bin", sep=":"))
-
-
 
 ndvi.gdal <- function(redfile, nirfile, ndvifile) {
   command <- paste("gdal_calc.py -A ", nirfile, " -B ", redfile, " --A_band=1 --B_band=1 --outfile=", ndvifile, " --type=Float32  --calc='1.00*(A-B)/(A+B)'  --overwrite", sep="")
