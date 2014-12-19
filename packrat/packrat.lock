@@ -1,0 +1,76 @@
+PackratFormat: 1.4
+PackratVersion: 0.4.1.1
+RVersion: 3.0.2
+Repos: CRAN=http://cran.rstudio.com
+
+Package: codetools
+Source: CRAN
+Version: 0.2-9
+Hash: b50ffdf434d3154c35b7183fdca87909
+
+Package: foreach
+Source: CRAN
+Version: 1.4.2
+Hash: fbdaa99f6c6bd4f252c5d8412f6e79c9
+Requires: codetools, iterators
+
+Package: gdalUtils
+Source: CRAN
+Version: 0.3.1
+Hash: 087cb781e91549c90729720c5796bfdc
+Requires: foreach, R.utils, sp
+
+Package: iterators
+Source: CRAN
+Version: 1.0.7
+Hash: b5320a58712688d5b18c207cf256ef3f
+
+Package: lattice
+Source: CRAN
+Version: 0.20-29
+Hash: 17e9fe582d11197544a5ec817a80b21e
+
+Package: packrat
+Source: CRAN
+Version: 0.4.1-1
+Hash: 5716097644904b9c1b4be2692de16005
+
+Package: raster
+Source: CRAN
+Version: 2.3-12
+Hash: b84f479bf59fd3ed66553827b3f8c497
+Requires: sp
+
+Package: R.methodsS3
+Source: CRAN
+Version: 1.6.1
+Hash: 88717a386d97ad2687b28a411392f570
+
+Package: R.oo
+Source: CRAN
+Version: 1.18.0
+Hash: 151940a7861e78ae66c157a06a81eecc
+Requires: R.methodsS3
+
+Package: R.utils
+Source: CRAN
+Version: 1.34.0
+Hash: a4b999df68204841d24c391f0e0f76dc
+Requires: R.methodsS3, R.oo
+
+Package: sp
+Source: CRAN
+Version: 1.0-16
+Hash: 1ec8e2e48ab1a6a12ba2b9754a860ed4
+Requires: lattice
+
+Package: spgrass6
+Source: CRAN
+Version: 0.8-6
+Hash: d3470021afd9757a5d7be6c895939e59
+Requires: sp, XML
+
+Package: XML
+Source: CRAN
+Version: 3.98-1.1
+Hash: 13746d37588e7083349177d6e8234864
