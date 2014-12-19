@@ -2,6 +2,6 @@
 .Rhistory
 .RData
 img
-out
+out/*
 litterature
 packrat/lib*/
